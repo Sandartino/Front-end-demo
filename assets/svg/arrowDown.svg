@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="xMaxYMax" viewBox="0 0 308.33 499.09"
+     xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(.5) translate(154.165 400)">
+        <g transform="rotate(90 182.32 124.38)">
+            <polygon class="down" points="58.65 270.3 94.35 306 247.35 153 94.35 0 58.65 35.7 175.95 153" fill="#fff"/>
+        </g>
+        <g transform="rotate(90 105.77 201.86)">
+            <polygon class="down" points="94.35 0 58.65 35.7 175.95 153 58.65 270.3 94.35 306 247.35 153" fill="#fff"/>
+        </g>
+        <g transform="rotate(90 28.296 279.33)">
+            <polygon class="down" points="58.65 270.3 94.35 306 247.35 153 94.35 0 58.65 35.7 175.95 153" fill="#fff"/>
+        </g>
+    </g>
+</svg>

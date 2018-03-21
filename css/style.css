@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'segoe-local';
+    src: url('../assets/SegoePrint.woff2') format('woff2'),
+    url('../assets/SegoePrint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../assets/DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kalam Light';
+    src: url('../assets/Kalam-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raisonne';
+    src: url('../assets/Raisonne-DemiBold.woff2') format('woff2');
+}
+
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    cursor: default;
+}
+
+.video-container {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    height: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    left: 49.99%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*PAGE 2 FLAG*/
+#second-page {
+    height: 100vh;
+}
+
+#second-page > div {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+}
+
+#white-long {
+    background-color: #f0f0f0;
+}
+
+#green-long {
+    background-color: #66cc33;
+    height: 100%;
+}
+
+#red-long {
+    background-color: red;
+}
+
+#green-short, #red-short {
+    position: absolute;
+    top: 0;
+    width: 28.6%;
+    height: 100%;
+    max-width: 180px;
+    box-shadow: -12px 0 30px -4px rgba(0, 0, 0, .70);
+}
+
+#green-scene, #red-scene {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    z-index: -1
+}
+
+#red-scene {
+    background: url(../assets/img/bgRedScene.png) left top;
+}
+
+#white-scene img {
+    position: relative;
+    width: 31vw;
+    max-width: 100%;
+    height: auto;
+    margin-left: 40%;
+    margin-top: 9.5%
+}
+
+#white-scene div p {
+    position: absolute;
+    top: 4.5%;
+    left: 22%;
+    width: 60%;
+    height: 30%;
+    font-size: 1.3vw;
+    font-family: Kalam Light, sans-serif
+}
+
+#spirit-title {
+    position: absolute;
+    width: 23%;
+    height: 8%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#nature-title {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 4vw;
+    font-weight: bolder;
+    left: 50%;
+    top: 50%;
+    transform: translate(-51%, -52%);
+}
+
+#sacrifice-title {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 4vw;
+    font-weight: bolder;
+    left: 33%;
+    top: 50%;
+    transform: translate(-31.6%, -50%);
+}
+
+#sacrifice-text {
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    left: 46.2%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+/*PAGE 3 MOUNTAIN*/
+#third-page {
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #FFFFFF -5%, #99CCFF 100%);
+}
+
+#third-page-scroll {
+    height: 300vh;
+    width: 100vw;
+}
+
+#third-page-title {
+    position: absolute;
+    opacity: 0;
+    font: 14vw Raisonne;
+    bottom: 28vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(#98aaaf 62%, #f2f3ef 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#third-page #mountain, #rock {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+}
+
+#compass-container {
+    position: absolute;
+    bottom: 1%;
+    left: 46%;
+    width: 7vw;
+    height: 7vh;
+    background: url("../assets/img/compass.png") no-repeat center center;
+    background-size: contain;
+}
+
+#arrow {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#scroll-line {
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+#scroll-text {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 10px;
+    list-style-type: none;
+    line-height: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: white
+}
+
+/*FOURTH PAGE MAP-BULGARIA*/
+#fourth-page {
+    background: url("../assets/svg/no-sprite/cityscape.svg") no-repeat 50% 100%, linear-gradient(#09203f, #537895);
+    height: 100vh;
+    z-index: 1;
+}
+
+#fourth-page-scroll {
+    width: 100vw;
+    height: 1000vh;
+    background-color: #59B240;
+}
+
+#map-bulgaria-text {
+    font: 25px "Kalam Light";
+    margin-left: 20px;
+    color: lightgrey;
+}
+
+#map-bulgaria-text h1 {
+    font-weight: bold;
+}
+
+#map-bulgaria-text div:not(:first-of-type) {
+    display: none;
+}
+
+/*=======masonry========*/
+.grid {
+    width: 85%;
+    margin-left: 11%;
+}
+
+.grid-sizer, .grid-item {
+    width: 31%;
+    margin-bottom: 3px;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.grid-item--clicked {
+    width: 62%;
+}
+
+.grid-item:hover {
+    opacity: .7;
+}
+
+.isLoading {
+    background: black url("../assets/img/spinner.gif") no-repeat center center;
+}
+
+#up, #down {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*========FIFTH-PAGE-CAVE==========*/
+#fifth-page-cave {
+    display: block;
+    background-color: black;
+    z-index: 1;
+}
+
+#cave {
+    height: 100vh;
+    background: url('../assets/img/cave.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#cave-t1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: translateX(-100%);
+    color: #90cb4d;
+    font: 60px "Segoe UI Semibold", Arial;
+}
+
+#cave-t2 {
+    position: absolute;
+    top: 81%;
+    right: 0;
+    transform: translateX(100%);
+    color: #90cb4d;
+    font: 60px "Segoe UI Semibold", Arial;
+}
+
+#and {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9.3rem;
+    color: white;
+    font-weight: 600;
+}
+
+#fifth-page-text {
+    background-color: black;
+    width: 100vw;
+    height: 600vh;
+}
+
+#cave-text h1 {
+    color: orange;
+    font-weight: bolder;
+    font-size: 100px;
+    opacity: 0;
+}
+
+#cave-particles {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#end {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
+
+
+
+
