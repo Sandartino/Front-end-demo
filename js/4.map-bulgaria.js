@@ -63,7 +63,7 @@ let sceneFour = (function () {
             .set(".up, .down", {attr: {fill: "white"}}, 1.6);
 
         function mapBulgariaInit() {
-            fourthPage.on("wheel", function () {
+            $(window).on("wheel scroll", function () {
                 mapBulgaria.townName = pathWay.css("stroke-dashoffset");
                 mapBulgaria.changeContent(imgNodes, imgPaths);
                 ImagesLoaded(gridImages).on('progress', function (_, img) {
@@ -99,7 +99,7 @@ let sceneFour = (function () {
                 $(img.img).css("opacity", 1);
                 msnry.layout()
             });
-            fourthPage.off();
+            $(window).off('wheel scroll');
             tlArrows.stop()
         }
 
