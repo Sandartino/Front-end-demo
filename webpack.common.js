@@ -50,12 +50,9 @@ module.exports = {
     },
     resolve: {
         alias: {
-            //require for ScrollMagic plugin gsap --> .../animation.gsap.min.js
+            //required for ScrollMagic plugin gsap --> ~/animation.gsap.min.js
             'TweenMax': path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
             'TimelineMax': path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js')
-            // 'ScrollToPlugin': path.resolve('node_modules', 'gsap/src/minified/plugins/ScrollToPlugin.min.js'),
-            // require for ScrollToPlugin
-            // 'TweenLite': path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js')
         }
     },
     plugins: [
@@ -64,7 +61,7 @@ module.exports = {
             template: './index.html',
             favicon: 'assets/img/favicon.ico'
         }),
-        //require for inline svg sprite
+        //required for inline svg sprite
         new HtmlWebpackInlineSVGPlugin({
             runPreEmit: true,
         }),
