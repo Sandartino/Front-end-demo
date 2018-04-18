@@ -8,9 +8,7 @@ http://www.framescollection.com/tunnelrats.html
 
 http://whois.wildlife.la
 
-This also gave me the opportunity to experiment with [SVG](https://developer.mozilla.org/kab/docs/Web/SVG) and [GSAP](https://greensock.com).
-
-After short research [scrollmagic](http://scrollmagic.io/docs/index.html) was chosen to wrap scrolling logic.
+This also gave me the opportunity to experiment with [SVG](https://developer.mozilla.org/kab/docs/Web/SVG) and [GSAP](https://greensock.com). After short research [scrollmagic](http://scrollmagic.io/docs/index.html) was chosen to wrap scrolling logic.
 
 
 
