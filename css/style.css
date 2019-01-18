@@ -295,6 +295,19 @@ video {
     cursor: pointer;
 }
 
+#scrollSkip {
+    color: white;
+    list-style-type: none;
+    line-height: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:20px
+}
+
 /*========FIFTH-PAGE-CAVE==========*/
 #fifth-page-cave {
     display: block;
